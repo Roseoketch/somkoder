@@ -4,7 +4,7 @@ body{
 
 /********** Template CSS **********/
 :root {
-    --primary: #F7941E;
+    --primary: #F46524;
     --light: #FFF5F3;
     --dark: #103741;
 }
@@ -41,7 +41,7 @@ body{
 
 .btn.btn-primary {
     color: #FFFFFF;
-    background-color: #F7941E;
+    background-color: #F46524;
 }
 
 .btn-square {
