@@ -62,7 +62,8 @@
 
                         <a href="contact.html" class="nav-item nav-link active">Contact Us</a>
                     </div>
-                    <a href="" class="btn btn-primary rounded-pill px-3 d-none d-lg-block">Join Us<i
+                    <a href="https://forms.gle/xo3sGhMxe9WJTTyo7"
+                        class="btn btn-primary rounded-pill px-3 d-none d-lg-block">Join Us<i
                             class="fa fa-arrow-right ms-3"></i></a>
                 </div>
             </nav>
@@ -120,33 +121,41 @@
                             <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                                 <div class="h-100 d-flex flex-column justify-content-center p-5">
 
-                                    <div class="row g-3">
+                                    <form class="row g-3" action="form.php">
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="name"
-                                                    placeholder="Your Name">
+                                                <input type="text" name="name" class="form-control border-0" id="name"
+                                                    placeholder="Your Name" required>
                                                 <label for="name">Your Name</label>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="form-floating">
-                                                <input type="email" class="form-control border-0" id="email"
-                                                    placeholder="Your Email">
+                                                <input type="email" name="email" class="form-control border-0"
+                                                    id="email" placeholder="Your Email" required>
                                                 <label for="email">Your Email</label>
                                             </div>
                                         </div>
                                         <div class="col-12">
                                             <div class="form-floating">
-                                                <input type="text" class="form-control border-0" id="subject"
-                                                    placeholder="Subject">
-                                                <label for="subject">Subject</label>
+                                                <input type="text" name="phonenumber " class="form-control border-0"
+                                                    id="phonenumber" placeholder="Phone Number" required>
+                                                <label for="phonenumber">Phone Number</label>
                                             </div>
                                         </div>
                                         <div class="col-12">
                                             <div class="form-floating">
+                                                <input type="text" name="subject " class="form-control border-0"
+                                                    id="subject" placeholder="Subject" required>
+                                                <label for="subject">Subject</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <div class="form-floating">
                                                 <textarea class="form-control border-0"
-                                                    placeholder="Leave a message here" id="message"
-                                                    style="height: 100px"></textarea>
+                                                    placeholder="Leave a message here" id="message" name="message"
+                                                    required style="height: 100px"></textarea>
                                                 <label for="message">Message</label>
                                             </div>
                                         </div>
@@ -154,7 +163,6 @@
                                             <button class="btn btn-primary w-100 py-3" type="submit">Send
                                                 Message</button>
                                         </div>
-                                    </div>
                                     </form>
                                 </div>
                             </div>
